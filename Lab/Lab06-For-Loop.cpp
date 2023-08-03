@@ -24,12 +24,12 @@ int main()
     if(n%2==1){
         printf("Series:");
        for(int i=1; i<=n; i+=2){
-            printf(" %d", i);
+            printf(" %d",i);
         } 
     } else{
         printf("Series:");
-        for (int i=n; i>=0; i-=2){
-            printf(" %d", i);
+        for (int i=n;i>=0; i-=2){
+            printf(" %d",i);
         }
     }
     printf("\n"); 
