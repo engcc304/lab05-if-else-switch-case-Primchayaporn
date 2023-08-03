@@ -16,33 +16,22 @@
         Series: 8 6 4 2 0
 */
 #include <stdio.h>
-
-void print_odd_series(int n) {
-    int i;
-    for (i = 1; i <= n; i += 2) {
-        printf("%d ", i);
-    }
-}
-
-void print_even_series(int n) {
-    int i;
-    for (i = n; i >= 0; i -= 2) {
-        printf("%d ", i);
-    }
-}
-
-int main() {
+int main()
+{
     int n;
-    printf("Enter value: ");
-    scanf("%d", &n);
-
-    if (n % 2 == 1) {
-        printf("Output:\nSeries: ");
-        print_odd_series(n);
-    } else {
-        printf("Output:\nSeries: ");
-        print_even_series(n);
+    printf("Enter value:");
+    scanf("%d",&n);
+    if(n%2==1){
+        printf("Series:");
+       for(int i=1; i<=n; i+=2){
+            printf(" %d", i);
+        } 
+    } else{
+        printf("Series:");
+        for (int i=n; i>=0; i-=2){
+            printf(" %d", i);
+        }
     }
-
-    return 0;
-}
+    printf("\n"); 
+    return 0 ;
+}//end main function
